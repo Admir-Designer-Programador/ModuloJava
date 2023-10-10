@@ -1,0 +1,31 @@
+DADOS DO SYSTEMA
+
+Nome
+E-mail
+Status
+Id
+
+Cargo
+Departamento
+Responsavel
+Perfil
+Data Integracao
+Pais Cidade
+Estado Localizacao
+
+
+
+
+ADMINISTRADOR*
+
+
+
+DESENVOLVEDOR*
+
+
+
+GESTOR* 
+
+
+
+ 

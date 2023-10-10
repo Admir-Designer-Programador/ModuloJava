@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" modified="2023-10-03T00:24:14.571Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="YRXeJSJnEYDqyPXTFq6Y" version="22.0.1" type="device">
+  <diagram name="Página-1" id="Ua3v1BHji91D_q0pT6dB">
+    <mxGraphModel dx="392" dy="249" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_yvtNexiW8ETfu01VHuk-1" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;Pessoa&lt;/i&gt;&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="234" y="280" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-2" value="+ field: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="_yvtNexiW8ETfu01VHuk-1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="_yvtNexiW8ETfu01VHuk-1">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-4" value="+ PagarImposto (): int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="_yvtNexiW8ETfu01VHuk-1">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;strokeWidth=3;" edge="1" parent="1" source="_yvtNexiW8ETfu01VHuk-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="314" y="366" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="314" y="410" />
+              <mxPoint x="314" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-5" value="Endereco" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="214" y="480" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-6" value="&lt;div&gt;+ logradouro: String&lt;/div&gt;&lt;div&gt;+ numero: String&lt;/div&gt;&lt;div&gt;+ cidade: String&lt;/div&gt;&lt;div&gt;+ estado: String&lt;/div&gt;&lt;div&gt;+ cep: String&lt;/div&gt;&lt;div&gt;+ complemento: String&lt;/div&gt;&lt;div&gt;+ endComercial: bool&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="_yvtNexiW8ETfu01VHuk-5">
+          <mxGeometry y="26" width="200" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=classic;endFill=0;" edge="1" parent="1" source="_yvtNexiW8ETfu01VHuk-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="280" as="targetPoint" />
+            <mxPoint x="380" y="199" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="301" y="199" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-18" value="PessoaJuridica" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="160" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-19" value="+ cnpj: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="_yvtNexiW8ETfu01VHuk-18">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-20" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="_yvtNexiW8ETfu01VHuk-18">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-21" value="+ razãoSocial: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="_yvtNexiW8ETfu01VHuk-18">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=classic;endFill=0;entryX=0.418;entryY=-0.001;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="_yvtNexiW8ETfu01VHuk-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="96" as="targetPoint" />
+            <mxPoint x="220" y="199" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-22" value="PessoaFisica" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="180" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-23" value="+ cpf: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="_yvtNexiW8ETfu01VHuk-22">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="_yvtNexiW8ETfu01VHuk-22">
+          <mxGeometry y="52" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="_yvtNexiW8ETfu01VHuk-25" value="+ DataNascimento: DataTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="_yvtNexiW8ETfu01VHuk-22">
+          <mxGeometry y="60" width="180" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

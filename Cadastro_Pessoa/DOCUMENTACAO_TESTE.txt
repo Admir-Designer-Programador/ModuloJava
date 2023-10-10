@@ -1,0 +1,27 @@
+UML: A LINGUAGEM DE MODELAGEMUNIFICADA
+
+
+Lista:                     
+
+nome*
+cpf
+data de nascimento
+cnpj
+razaosocial
+
+
+logradouro
+numero
+cidade
+estado
+cep
+complemento
+endereçoComercial
+endComercial
+
+
+Lista de erança
+
+
+MÉTODO:
+PagamentoImposto

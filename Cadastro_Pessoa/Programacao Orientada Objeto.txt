@@ -1,0 +1,100 @@
+Tópicos em aula:
+POO Pilares
+Sistema no Console
+Capacidades Hard Skills:
+Aplicar técnicas de código limpo (clean code)
+Manipular os diferentes tipos de dados na elaboração de programas
+Utilizar o paradigma da programação orientada a objetos
+Soft Skills trabalhadas:
+Capacidade de Negociação
+Gestão de Pessoas
+Resolução de Problemas
+Tomada de Decisões
+Relacionamento interpessoal
+Gestão de conflitos
+Capacidade de receber feedback
+Capacidades Socio Emocional:
+Demonstrar atenção a detalhes
+Demonstrar capacidade de comunicação com profissionais de diferentes áreas e especialidades 
+Demonstrar capacidade de análise 
+Demonstrar capacidade de organização 
+Demonstrar visão sistêmica
+Seguir método de trabalho
+Trabalhar em equipe
+Demonstrar raciocínio lógico na organização das informações
+
+
+POO 01 Pilares - Abstracao
+
+Cria Objetos Somente dos Filhos e não da Superclasse.
+
+
+
+POO 02 Pilares - Herança
+
+Você herda atributos podendo criar sub-Classe de herança criando intens novos
+Criando classe Pai e depois Classe Extends
+
+
+POO 03 Pilares (Metodo) - Plomorfismo
+
+você herda algo mais pode modificar este atributo
+
+Sobre Escrita - mudando Comportamento
+
+Sobre Carga - Permite utilizar o mesmo nome em mais de um método
+
+
+POO 04 Pilares - Encapsulamento
+
+
+Classe que não devem ser expostos.
+
+Significa que algumas classe não vão poder ser alterado.
+
+Modificadores de Acesso
+
+public: o acesso é livre em qualquer lugar do programa.
+
+protected: podem ser acessados pelos membros da subclasse
+
+private: só podem ser acessados pela própria classe
+
+
+Interface (implements)
+
+A interface é um recurso utilizado para “obrigar” a um
+grupo de classes a ter métodos ou propriedades em
+comum para existir em um determinado contexto,
+contudo os métodos podem ser implementados em
+cada classe de uma maneira diferente.
+
+Pode-se dizer que uma interface é um contrato que
+quando assumido por uma classe deve ser
+implementado.
+
+
+NUNCA RENOMEAR UMA CLASSE!!!!
+
+
+
+Metodo Pessoa Fisica
+
+abaixo de 1500 não tera Rendimento (zerado) OK
+
+salario de 1500 de 3500 * 2%
+
+salario de 3500 de 6000 * 3.5%
+
+salario acima de 6000 * 5%
+
+
+
+SOUT* = System.out.println();
+
+
+
+ArrayList - Possibilita modificargit
+
+
+
