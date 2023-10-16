@@ -1,4 +1,5 @@
 public class Autor {
-    public String autor;
-    public date localNasc;
+    public String nome;
+    public String localNasc;
+
 }

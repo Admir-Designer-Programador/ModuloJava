@@ -1,144 +1,132 @@
-public class Main {
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-    public class Main {
-        public static void main(String[] args) {
+public class Main {
+    public static void main(String[] args) {
+        // sout = snipet para printar algo na tela
+        System.out.println("==========================================================================");
+        System.out.println("==========================================================================");
+        System.out.println(" ");
 
-            ArrayList<EnderecoLivraria> listapL = new ArrayList<EnderecoLivraria>();
-            EnderecoLivraria metodospL = new EnderecoLivraria();
+        ArrayList<Livro> listaLivros = new ArrayList<>();
 
+        // sout = snipet para printar algo na tela
+        System.out.println("Bem vindo ao sistema de cadastro de Livros do Santo Sebo.");
 
-            System.out.println("Bem Vindo ao Sistema de Cadastro de Livros");
+        Scanner scannNumero = new Scanner(System.in);
+        Scanner scannTxt = new Scanner(System.in);
+        Scanner scannFloat = new Scanner(System.in);
+        int opcao;
 
-            Scanner scanner = new Scanner(System.in);
-            int opcao;
-
-            do {
-
-                System.out.println("Escolha uma opção: 1 - Cadastro / 0 - Sair");
-                opcao = scanner.nextInt();
-
-                switch (opcao) {
-                    case 1:
-                        int opcao;
-
-                        do {
-
-                            System.out.println("Escolha uma opção: Cadastrar Pessoa Fisica / 2 - Lista Pessoa Fisica / 0 - Voltar ao menu anterio");
-                            opcaoPf = scanner.nextInt();
-
-                            switch (opcao) {
-
-                                case 1:
-                                    EnderecoLivraria novapl = new EnderecoLivraria();
-                                    Livraria novoEndpL = new EnderecoLivraria();
+        do {
+            System.out.println("Escolha uma opção:\n 1 = Cadastrar Livro(s).\n 2 = Listar Livro(s).\n 0 = Sair.");
+            System.out.println();
+            System.out.print("Opção: ");
+            opcao = scannNumero.nextInt();
 
 
-                                    System.out.println("Digite o nome do Livro: ");
-                                    novapf.nome = scanner.next();
+            switch (opcao){
+                case 1:
+                    Livro novoLivro = new Livro();
+                    Autor novoAutor = new Autor();
 
-                                    System.out.println("Digite o numero do livro: ");
-                                    novapf.numero livro = scanner.next();
+                    System.out.println("Digite o Título do Livro: ");
+                    novoLivro.titulo = scannTxt.nextLine();
 
-                                    System.out.println("Digite a retirada mensal (Digite Somente numero): ");
-                                    novapf.retirada = scanner.nextInt();
+                    System.out.println("Digite o nome do Autor do Livro: ");
+                    novoAutor.nome = scannTxt.nextLine();
 
-                                    System.out.println("Digite a data de Lancamento (dd/MM/aaaa): ");
-                                    LocalDate date = LocalDate.parse(scanner.next(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-                                    Period periodo = Period.between(date, LocalDate.now());
+                    System.out.println("Digite o Local de Nascimento do Autor do Livro: ");
+                    novoAutor.localNasc = scannTxt.nextLine();
 
-                                    novapL.dataLancamento = date;
+                    novoLivro.autor = novoAutor;
 
-                                    if (periodo.getYears() >= 18) {
-                                        System.out.println("A pessoa tem mais de 18 anos");
-                                    } else {
-                                        System.out.println("A pessoa tem menos de 18 anos. Retornando menu...");
-                                        break;
-                                    }
+                    System.out.println("Digite o Preço do Livro (formato: R$ xx,xx): ");
+                    novoLivro.preco = scannFloat.nextFloat();
 
-                                    System.out.println("Digite o Domo: ");
-                                    novoEndpL.domo = scanner.next();
+                    System.out.println("Digite a Data de Lançamento do livro (formato: dd/MM/yyyy): ");
+                    LocalDate date = LocalDate.parse(scannTxt.nextLine(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+                    Period periodo = Period.between(date, LocalDate.now());
 
-                                    System.out.println("Digite o número");
-                                    novoEndpL.numero = scanner.next();
+                    novoLivro.dataLancamento = date;
 
-                                    System.out.println("Este endereço seu ou é trabalho? S/N: ");
-                                    String endCom;
-                                    endCom = scanner.next();
-
-                                    if (endCom.equalsIgnoreCase("S")) {
-                                        novoEndpL.endereco = true;
-                                    } else {
-                                        novoEndPf.enderecoTrabalho = false;
-                                    }
-
-
-                                    novapL.endereco = novoEndpL;
-
-                                    listapL.add(novapL);
-
-                                    System.out.println("Cadastro realizado com sucesso!");
-
-                                    break;
-
-                                case 2:
-
-                                    if (listaPf.size()> 0){
-
-                                        for (Livro cadapL: listapL) {
-                                            System.out.println();
-                                            System.out.println("Nome" + cadapL.nome);
-                                            System.out.println("numero" + cadapL.cpf);
-                                            System.out.println("Endereço" + cadapL.endereco.logradouro + "," + cadapL.endereco.numero);
-                                            System.out.println("Data de Nascimento" + cadapL.dataNascimento.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
-                                            System.out.println("Omposto a ser pago" + metodospL.CalcularEntrega(cadapL.retorno));
-                                            System.out.println();
-                                            System.out.println("Digite para continuar");
-                                            scanner.nextInt();
-
-                                            opcaoPf = scanner.nextInt();
-
-                                        }
-                                    }else {
-                                        System.out.println("Lista vazia");
-                                    }
-
-                                    break;
-
-
-                                case 0:
-                                    System.out.println("Voltando ao menu anterior");
-                                    break;
-                                default:
-                                    System.out.println("opcao invalida");
-                                    break;
-
-                            }
-
-                        } while (opcaoPf != 0);
-
+                    if (periodo.getYears() >= 5){
+                        System.out.println();
+                        System.out.println("==========================================================================");
+                        System.out.println("==========================================================================");
+                        System.out.println();
+                        System.out.println("O livro TEM mais de 05 anos de lançamento e pôde ser cadastrado normalmente.\nCadastro realizado com sucesso!");
+                        System.out.println();
+                        System.out.println("==========================================================================");
+                        System.out.println("==========================================================================");
+                    }else {
+                        System.out.println("==========================================================================");
+                        System.out.println("==========================================================================");
+                        System.out.println();
+                        System.out.println("O livro NÃO TEM mais de 05 anos de lançamento, por este motivo o livro NÃO PODE SER CADASTRADO.");
+                        System.out.println();
+                        System.out.println("==========================================================================");
+                        System.out.println("==========================================================================");
                         break;
+                    }
 
+                    listaLivros.add(novoLivro);
 
-                    case 0:
-                        System.out.println("Obrigado por utilizar o nosso sistema! Forte Abraço! ");
-                        break;
-                    default:
-                        System.out.println("Opçao invalida, por favor digite uma opcao valida");
-                        break;
-                }
+                    System.out.println();
+                    System.out.println("Cadastro realizado com sucesso.");
 
-            } while (opcao != 0);
+                    break;
 
+                case 2:
+                    if (listaLivros.size() > 0){
+                        for (Livro cadaLivro : listaLivros){
+                            System.out.println("==========================================================================");
+                            System.out.println("==========================================================================");
+                            System.out.println();
+                            System.out.println();
+                            System.out.println("Título: " + cadaLivro.titulo);
+                            System.out.println("Autor: " + cadaLivro.autor.nome);
+                            System.out.println("Local de Nascimento do Autor: " + cadaLivro.autor.localNasc);
 
+                            //Formatando para string, para formatar 2 casas decimais após a virgula e também mostra a vírgula ao invés de ponto
+                            System.out.println("Preço do livro: " + String.format("%.2f", cadaLivro.preco));
 
+                            //Tipo float, na saída/print, troca a vírgula por ponto e come o último zero (exemplo: 1,50 = 1.5)
+                            //System.out.println("Preço: R$ " + cadaLivro.preco);
+                            System.out.println("Data de Lançamento: " + cadaLivro.dataLancamento.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+                            System.out.println();
+                            System.out.println("==========================================================================");
+                            System.out.println("==========================================================================");
 
+                        }
 
-        }
+                    }else {
+                        System.out.println("==========================================================================");
+                        System.out.println("==========================================================================");
+                        System.out.println();
+                        System.out.println("Lista Vazia.");
+                        System.out.println();
+                        System.out.println("==========================================================================");
+                        System.out.println("==========================================================================");
+                    }
+
+                    break;
+
+                default:
+                    System.out.println("==========================================================================");
+                    System.out.println("==========================================================================");
+                    System.out.println();
+                    System.out.println("Você é burro ?!\nDigite uma opção válida.");
+                    System.out.println();
+                    System.out.println("==========================================================================");
+                    System.out.println("==========================================================================");
+                    break;
+            }
+        }while (opcao != 0);
+
 
     }
 }
